@@ -22,7 +22,6 @@
 		83B1F93A189F62AC00F2CF9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B1F91C189F62AC00F2CF9A /* UIKit.framework */; };
 		83B1F942189F62AC00F2CF9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83B1F940189F62AC00F2CF9A /* InfoPlist.strings */; };
 		83B1F944189F62AC00F2CF9A /* FantasySquaresTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B1F943189F62AC00F2CF9A /* FantasySquaresTests.m */; };
-		83B1F951189F6C3500F2CF9A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B1F950189F6C3500F2CF9A /* Parse.framework */; };
 		83B1F953189F6C7900F2CF9A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B1F952189F6C7900F2CF9A /* AudioToolbox.framework */; };
 		83B1F955189F6C8100F2CF9A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B1F954189F6C8100F2CF9A /* CFNetwork.framework */; };
 		83B1F957189F6C9800F2CF9A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B1F956189F6C9800F2CF9A /* CoreLocation.framework */; };
@@ -33,6 +32,14 @@
 		83B1F961189F6CD000F2CF9A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B1F960189F6CD000F2CF9A /* StoreKit.framework */; };
 		83B1F963189F6CD900F2CF9A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B1F962189F6CD900F2CF9A /* SystemConfiguration.framework */; };
 		83B1F969189F715700F2CF9A /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B1F968189F715700F2CF9A /* SignUpViewController.m */; };
+		BA15D4E118A07A27004053CF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA15D4E018A07A27004053CF /* Parse.framework */; };
+		BA3BEF6318A09D61002ACA7E /* MainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3BEF6218A09D61002ACA7E /* MainTabViewController.m */; };
+		BA3BEF6C18A09E71002ACA7E /* MyGamesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3BEF6B18A09E71002ACA7E /* MyGamesTVC.m */; };
+		BA3BEF6F18A09E81002ACA7E /* JoinGameTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3BEF6E18A09E81002ACA7E /* JoinGameTVC.m */; };
+		BA3BEF7218A09EC6002ACA7E /* CreateGameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3BEF7118A09EC6002ACA7E /* CreateGameVC.m */; };
+		BA3BEF7518A09F0E002ACA7E /* ViewGameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3BEF7418A09F0E002ACA7E /* ViewGameVC.m */; };
+		BA3BEF7818A0A0DE002ACA7E /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3BEF7718A0A0DE002ACA7E /* Game.m */; };
+		BA3BEF7B18A0A5C5002ACA7E /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3BEF7A18A0A5C5002ACA7E /* Event.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +74,6 @@
 		83B1F93F189F62AC00F2CF9A /* FantasySquaresTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FantasySquaresTests-Info.plist"; sourceTree = "<group>"; };
 		83B1F941189F62AC00F2CF9A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		83B1F943189F62AC00F2CF9A /* FantasySquaresTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FantasySquaresTests.m; sourceTree = "<group>"; };
-		83B1F950189F6C3500F2CF9A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		83B1F952189F6C7900F2CF9A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		83B1F954189F6C8100F2CF9A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		83B1F956189F6C9800F2CF9A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -79,6 +85,21 @@
 		83B1F962189F6CD900F2CF9A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		83B1F967189F715700F2CF9A /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		83B1F968189F715700F2CF9A /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		BA15D4E018A07A27004053CF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		BA3BEF6118A09D61002ACA7E /* MainTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabViewController.h; sourceTree = "<group>"; };
+		BA3BEF6218A09D61002ACA7E /* MainTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabViewController.m; sourceTree = "<group>"; };
+		BA3BEF6A18A09E71002ACA7E /* MyGamesTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGamesTVC.h; sourceTree = "<group>"; };
+		BA3BEF6B18A09E71002ACA7E /* MyGamesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGamesTVC.m; sourceTree = "<group>"; };
+		BA3BEF6D18A09E81002ACA7E /* JoinGameTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoinGameTVC.h; sourceTree = "<group>"; };
+		BA3BEF6E18A09E81002ACA7E /* JoinGameTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoinGameTVC.m; sourceTree = "<group>"; };
+		BA3BEF7018A09EC6002ACA7E /* CreateGameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateGameVC.h; sourceTree = "<group>"; };
+		BA3BEF7118A09EC6002ACA7E /* CreateGameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateGameVC.m; sourceTree = "<group>"; };
+		BA3BEF7318A09F0E002ACA7E /* ViewGameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewGameVC.h; sourceTree = "<group>"; };
+		BA3BEF7418A09F0E002ACA7E /* ViewGameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewGameVC.m; sourceTree = "<group>"; };
+		BA3BEF7618A0A0DE002ACA7E /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		BA3BEF7718A0A0DE002ACA7E /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		BA3BEF7918A0A5C5002ACA7E /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		BA3BEF7A18A0A5C5002ACA7E /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +117,8 @@
 				83B1F91B189F62AC00F2CF9A /* CoreGraphics.framework in Frameworks */,
 				83B1F955189F6C8100F2CF9A /* CFNetwork.framework in Frameworks */,
 				83B1F953189F6C7900F2CF9A /* AudioToolbox.framework in Frameworks */,
+				BA15D4E118A07A27004053CF /* Parse.framework in Frameworks */,
 				83B1F91D189F62AC00F2CF9A /* UIKit.framework in Frameworks */,
-				83B1F951189F6C3500F2CF9A /* Parse.framework in Frameworks */,
 				83B1F919189F62AC00F2CF9A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +139,10 @@
 		8324572A189F877600A8A98E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BA3BEF7918A0A5C5002ACA7E /* Event.h */,
+				BA3BEF7A18A0A5C5002ACA7E /* Event.m */,
+				BA3BEF7618A0A0DE002ACA7E /* Game.h */,
+				BA3BEF7718A0A0DE002ACA7E /* Game.m */,
 				8324572B189F878E00A8A98E /* User.h */,
 				8324572C189F878E00A8A98E /* User.m */,
 			);
@@ -146,6 +171,7 @@
 		83B1F917189F62AC00F2CF9A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BA15D4E018A07A27004053CF /* Parse.framework */,
 				83B1F962189F6CD900F2CF9A /* SystemConfiguration.framework */,
 				83B1F960189F6CD000F2CF9A /* StoreKit.framework */,
 				83B1F95E189F6CCA00F2CF9A /* Security.framework */,
@@ -155,7 +181,6 @@
 				83B1F956189F6C9800F2CF9A /* CoreLocation.framework */,
 				83B1F954189F6C8100F2CF9A /* CFNetwork.framework */,
 				83B1F952189F6C7900F2CF9A /* AudioToolbox.framework */,
-				83B1F950189F6C3500F2CF9A /* Parse.framework */,
 				83B1F918189F62AC00F2CF9A /* Foundation.framework */,
 				83B1F91A189F62AC00F2CF9A /* CoreGraphics.framework */,
 				83B1F91C189F62AC00F2CF9A /* UIKit.framework */,
@@ -214,6 +239,16 @@
 				83245728189F7F1D00A8A98E /* LoginViewController.m */,
 				83B1F967189F715700F2CF9A /* SignUpViewController.h */,
 				83B1F968189F715700F2CF9A /* SignUpViewController.m */,
+				BA3BEF6118A09D61002ACA7E /* MainTabViewController.h */,
+				BA3BEF6218A09D61002ACA7E /* MainTabViewController.m */,
+				BA3BEF6A18A09E71002ACA7E /* MyGamesTVC.h */,
+				BA3BEF6B18A09E71002ACA7E /* MyGamesTVC.m */,
+				BA3BEF6D18A09E81002ACA7E /* JoinGameTVC.h */,
+				BA3BEF6E18A09E81002ACA7E /* JoinGameTVC.m */,
+				BA3BEF7018A09EC6002ACA7E /* CreateGameVC.h */,
+				BA3BEF7118A09EC6002ACA7E /* CreateGameVC.m */,
+				BA3BEF7318A09F0E002ACA7E /* ViewGameVC.h */,
+				BA3BEF7418A09F0E002ACA7E /* ViewGameVC.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -315,11 +350,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA3BEF7B18A0A5C5002ACA7E /* Event.m in Sources */,
+				BA3BEF7518A09F0E002ACA7E /* ViewGameVC.m in Sources */,
+				BA3BEF7818A0A0DE002ACA7E /* Game.m in Sources */,
 				8324572D189F878E00A8A98E /* User.m in Sources */,
+				BA3BEF7218A09EC6002ACA7E /* CreateGameVC.m in Sources */,
 				83245729189F7F1D00A8A98E /* LoginViewController.m in Sources */,
 				83B1F929189F62AC00F2CF9A /* AppDelegate.m in Sources */,
 				83B1F925189F62AC00F2CF9A /* main.m in Sources */,
 				83B1F969189F715700F2CF9A /* SignUpViewController.m in Sources */,
+				BA3BEF6318A09D61002ACA7E /* MainTabViewController.m in Sources */,
+				BA3BEF6F18A09E81002ACA7E /* JoinGameTVC.m in Sources */,
+				BA3BEF6C18A09E71002ACA7E /* MyGamesTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +491,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/hching/git/FantasySquares,
+					"/Users/minh/Desktop/Dropbox/c/objective-c/fantasysquares",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FantasySquares/FantasySquares-Prefix.pch";
@@ -467,6 +510,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/hching/git/FantasySquares,
+					"/Users/minh/Desktop/Dropbox/c/objective-c/fantasysquares",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FantasySquares/FantasySquares-Prefix.pch";
