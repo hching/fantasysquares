@@ -9,6 +9,7 @@
 #import "CreateGameVC.h"
 
 @interface CreateGameVC ()
+/*
 @property (weak, nonatomic) IBOutlet UITextField *gameTitleTextField;
 @property (weak, nonatomic) IBOutlet UITextField *eventTypeTextField;
 @property (weak, nonatomic) IBOutlet UITextField *eventTextField;
@@ -16,7 +17,7 @@
 @property (weak, nonatomic) IBOutlet UISwitch *randomEveryQuarterSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *privateGameSwitch;
 
-@property (weak, nonatomic) IBOutlet UIPickerView *picker;
+@property (weak, nonatomic) IBOutlet UIPickerView *picker;*/
 @end
 
 @implementation CreateGameVC
