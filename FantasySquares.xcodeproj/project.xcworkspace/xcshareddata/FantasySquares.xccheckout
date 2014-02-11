@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>19E521A0-BA97-4978-9B76-7B1C263619FE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FantasySquares</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F09F414E-33B3-4865-886C-5C19D23BB11F</key>
+		<string>ssh://github.com/hching/fantasysquares.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FantasySquares.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F09F414E-33B3-4865-886C-5C19D23BB11F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/hching/fantasysquares.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F09F414E-33B3-4865-886C-5C19D23BB11F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F09F414E-33B3-4865-886C-5C19D23BB11F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FantasySquares</string>
+		</dict>
+	</array>
+</dict>
+</plist>

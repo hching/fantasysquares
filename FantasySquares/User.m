@@ -11,7 +11,16 @@
 
 @implementation User
 
-- (NSString *)getCurrentUsername {
+- (NSString *)getCurrentUserId {
+    PFUser *currentUser = [PFUser currentUser];
+    if (currentUser) {
+        return currentUser.objectId;
+    } else {
+        return nil;
+    }
+}
+
+- (NSString *)getCurrentUserName {
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser) {
         return currentUser.username;

@@ -10,6 +10,7 @@
 
 @interface User : NSObject
 
+@property (nonatomic, strong, readonly) NSString *getCurrentUserId;;
 @property (nonatomic, strong, readonly) NSString *getCurrentUserName;
 @property (nonatomic, strong, readonly) NSString *getCurrentUserEmail;
 
