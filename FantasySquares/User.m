@@ -7,10 +7,15 @@
 //
 
 #import "User.h"
-#import <Parse/Parse.h>
+#import <Parse/PFObject+Subclass.h>
 
 @implementation User
 
++ (NSString *)parseClassName {
+    return @"User";
+}
+
+/*
 - (NSString *)getCurrentUserId {
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser) {
@@ -37,5 +42,5 @@
         return nil;
     }
 }
-
+*/
 @end

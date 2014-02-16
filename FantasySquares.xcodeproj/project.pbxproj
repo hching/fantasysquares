@@ -195,6 +195,7 @@
 		83B1F91E189F62AC00F2CF9A /* FantasySquares */ = {
 			isa = PBXGroup;
 			children = (
+				83FE937718B0A6BD00BE8B82 /* Images */,
 				8324572A189F877600A8A98E /* Models */,
 				83B1F96A189F742500F2CF9A /* View Controllers */,
 				83B1F927189F62AC00F2CF9A /* AppDelegate.h */,
@@ -256,6 +257,13 @@
 				83382CCD18A83E13007DD981 /* EventListVC.m */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		83FE937718B0A6BD00BE8B82 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

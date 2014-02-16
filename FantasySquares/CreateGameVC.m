@@ -7,8 +7,9 @@
 //
 
 #import "CreateGameVC.h"
-#import "Game.h"
+#import "User.h"
 #import "Event.h"
+#import "Game.h"
 #import <Parse/Parse.h>
 
 @interface CreateGameVC ()
@@ -22,6 +23,7 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *eventPicker;
 @property (weak, nonatomic) IBOutlet UIButton *createGameButton;
 
+- (IBAction)onTap:(id)sender;
 - (IBAction)onEventSelect:(id)sender;
 - (IBAction)onSelectPickerButton:(id)sender;
 - (IBAction)onGameTitleSelect:(id)sender;
@@ -29,7 +31,6 @@
 
 @property(strong, nonatomic) NSMutableArray *eventListArray;
 @property(strong, nonatomic) NSMutableArray *eventIdListArray;
-
 @property(strong, nonatomic) NSString *eventId;
 
 @end
@@ -51,17 +52,36 @@
     
     self.eventListArray = [[NSMutableArray alloc] init];
     
+    PFQuery *query = [Event query];
+    [query whereKey:@"eventType" equalTo:[self.gameTypeSegment titleForSegmentAtIndex:self.gameTypeSegment.selectedSegmentIndex]];
+    //[query whereKey:@"eventType" lessThanOrEqualTo:PFUser.currentUser.rupees];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            NSLog(@"Successfully retrieved %d scores.", objects.count);
+            for(Event *event in objects) {
+                NSLog(@"%@", event.objectId);
+                NSLog(@"%@", event.teamOne);
+                [self.eventListArray addObject:[NSString stringWithFormat:@"%@ vs %@", event.teamOne, event.teamTwo]];
+                self.eventId = event.objectId;
+            }
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
+    
+    /*
     PFQuery *query = [PFQuery queryWithClassName:@"Event"];
     [query whereKey:@"eventType" equalTo:[self.gameTypeSegment titleForSegmentAtIndex:self.gameTypeSegment.selectedSegmentIndex]];
     [query findObjectsInBackgroundWithTarget:self selector:@selector(findCallback:error:)];
+    */
     
-    self.eventIdListArray = [[NSMutableArray alloc]
-                             initWithObjects: [NSNumber numberWithInt:1],
-                             [NSNumber numberWithInt:2], nil];
-    
+    self.eventIdListArray = [[NSMutableArray alloc] initWithObjects: [NSNumber numberWithInt:1], [NSNumber numberWithInt:2], nil];
     self.pickerContainerView.frame = CGRectMake(0, 460, 320, 261);
+    self.eventTextField.delegate = self;
 }
 
+/*
 - (void)findCallback:(NSArray *)objects error:(NSError *)error {
     if (!error) {
         // The find succeeded.
@@ -78,6 +98,7 @@
         NSLog(@"Error: %@ %@", error, [error userInfo]);
     }
 }
+*/
 
 - (void)didReceiveMemoryWarning
 {
@@ -107,24 +128,33 @@
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     NSString *event = [self.eventListArray objectAtIndex:row];
-    NSInteger eventId = [[self.eventIdListArray objectAtIndex:row] integerValue];
+    //NSInteger eventId = [[self.eventIdListArray objectAtIndex:row] integerValue];
     self.eventTextField.text = event;
 }
 
 # pragma mark - Methods
 
+- (IBAction)onTap:(id)sender {
+    [self.view endEditing:YES];
+}
+
 - (IBAction)onEventSelect:(id)sender {
-    [self.eventTextField resignFirstResponder];
+    //[self.eventTextField resignFirstResponder];
     self.pickerContainerView.hidden = false;
     [self.eventPicker reloadAllComponents];
     if([self.eventTextField.text isEqual: @"Event"]) {
-       //[self.eventPicker selectRow:1 inComponent:0 animated:NO];
-       self.eventTextField.text= [self.eventListArray objectAtIndex:[self.eventPicker selectedRowInComponent:0]];
+        //[self.eventPicker selectRow:1 inComponent:0 animated:NO];
+        self.eventTextField.text= [self.eventListArray objectAtIndex:[self.eventPicker selectedRowInComponent:0]];
+        self.eventId =  [self.eventIdListArray objectAtIndex:[self.eventPicker selectedRowInComponent:0]];
     }
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:0.3];
     self.pickerContainerView.frame = CGRectMake(0, 200, 320, 261);
     [UIView commitAnimations];
+}
+
+-(BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+    return NO;
 }
 
 - (IBAction)onSelectPickerButton:(id)sender {
@@ -140,13 +170,28 @@
 
 - (IBAction)onCreateGame:(id)sender {
     PFUser *currentUser = [PFUser currentUser];
+    Game *game = [Game object];
+    game.title = self.gameTitleTextField.text;
+    game.ownerId = currentUser.objectId;
+    game.ownerUsername = currentUser.username;
+    game.eventId = self.eventId;
+    game.random = (self.randomSwitch.on == YES ? @YES : @NO);
+    game.private = (self.privateGameSwitch.on == YES ? @YES : @NO);
+    game.user = currentUser;
+    [game saveEventually];
+    
+/*
+    PFUser *currentUser = [PFUser currentUser];
     PFObject *game = [PFObject objectWithClassName:@"Game"];
     game[@"title"] = self.gameTitleTextField.text;
     game[@"ownerId"] = currentUser.objectId;
     game[@"ownerUsername"] = currentUser.username;
     game[@"eventId"] = self.eventId;
     game[@"private"] = (self.privateGameSwitch.on == YES ? @YES : @NO);
+    game[@"user"] = [PFUser currentUser];
     [game saveEventually];
+ */
+
 }
 
 

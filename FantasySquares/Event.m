@@ -7,10 +7,15 @@
 //
 
 #import "Event.h"
-#import <Parse/Parse.h>
+#import <Parse/PFObject+Subclass.h>
 
 @implementation Event
 
++ (NSString *)parseClassName {
+    return @"Event";
+}
+
+/*
 // First set up a callback.
 - (void)findCallback:(NSArray *)objects error:(NSError *)error {
     if (!error) {
@@ -56,10 +61,10 @@
         }
         NSLog(@"%@", [eventTitle objectAtIndex:0]);
     }];
-     */
+ 
 }
 
-
+*/
 
 
 

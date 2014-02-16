@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Parse/Parse.h>
 
-@interface User : NSObject
+@interface User : PFObject<PFSubclassing>
 
-@property (nonatomic, strong, readonly) NSString *getCurrentUserId;;
-@property (nonatomic, strong, readonly) NSString *getCurrentUserName;
-@property (nonatomic, strong, readonly) NSString *getCurrentUserEmail;
+@property NSString *username;
+
++ (NSString *)parseClassName;
 
 @end

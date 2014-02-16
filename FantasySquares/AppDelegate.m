@@ -8,14 +8,19 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import "user.h"
+#import "Event.h"
+#import "Game.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    [Parse setApplicationId:@"hdmZsuHiZerYSx0GdgcgMW59m6RAPZ7REVNLvK8D"
-                  clientKey:@"9roB5UMTd4Eg8ZoVX0c5JROw6YCKizHw7B2t1WZE"];
+    [User registerSubclass];
+    [Event registerSubclass];
+    [Game registerSubclass];
+    [Parse setApplicationId:@"hdmZsuHiZerYSx0GdgcgMW59m6RAPZ7REVNLvK8D" clientKey:@"9roB5UMTd4Eg8ZoVX0c5JROw6YCKizHw7B2t1WZE"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     return YES;
 }

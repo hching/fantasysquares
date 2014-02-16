@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller - Fantasy Squares-->
+        <!--Login View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController storyboardIdentifier="LoginViewController" id="vXZ-lx-hvc" customClass="LoginViewController" sceneMemberID="viewController">
@@ -18,32 +18,32 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="hching01" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XXD-zG-ttf">
-                                <rect key="frame" x="73" y="92" width="174" height="30"/>
+                                <rect key="frame" x="71" y="144" width="174" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="hching123" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IEg-Xc-v1t">
-                                <rect key="frame" x="73" y="130" width="174" height="30"/>
+                                <rect key="frame" x="71" y="182" width="174" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgy-LD-gOq">
-                                <rect key="frame" x="109" y="216" width="106" height="30"/>
+                                <rect key="frame" x="71" y="249" width="82" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign In">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Sign In"/>
                                 <connections>
                                     <action selector="onSignIn:" destination="vXZ-lx-hvc" eventType="touchDown" id="CFL-aa-NvG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Fd-2R-E7S">
-                                <rect key="frame" x="111" y="276" width="98" height="30"/>
+                                <rect key="frame" x="157" y="249" width="98" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -52,20 +52,34 @@
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Invalid login please try again." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsS-Hk-CBr">
-                                <rect key="frame" x="57" y="168" width="211" height="21"/>
+                                <rect key="frame" x="55" y="220" width="211" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YAHOO!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ban-hU-K9j">
+                                <rect key="frame" x="81" y="89" width="158" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fantasy Squares" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjJ-e0-D8i">
+                                <rect key="frame" x="36" y="115" width="248" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="tma-9b-6rZ" appends="YES" id="ScV-xi-kV0"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Fantasy Squares" id="xvU-df-6nh"/>
+                    <navigationItem key="navigationItem" id="xvU-df-6nh"/>
                     <connections>
                         <outlet property="loginErrorLabel" destination="RsS-Hk-CBr" id="UBg-9x-Tjg"/>
                         <outlet property="passwordText" destination="IEg-Xc-v1t" id="PU3-sO-HWd"/>
@@ -122,17 +136,25 @@
         <scene sceneID="mm0-i3-NRF">
             <objects>
                 <tableViewController id="SRJ-LV-479" customClass="MyGamesTVC" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="JEg-rD-km0">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="48" sectionHeaderHeight="22" sectionFooterHeight="22" id="JEg-rD-km0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="zjF-au-0UX">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="48" id="zjF-au-0UX">
+                                <rect key="frame" x="0.0" y="86" width="320" height="48"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zjF-au-0UX" id="CX4-wt-4JG">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2GC-bZ-XaR">
+                                            <rect key="frame" x="20" y="13" width="261" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -143,6 +165,8 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="My Games" id="eHj-y3-YAV"/>
                     <connections>
+                        <outlet property="gameTitle" destination="2GC-bZ-XaR" id="lGT-1m-EKu"/>
+                        <outlet property="myGamesTableView" destination="JEg-rD-km0" id="0hR-tj-vay"/>
                         <segue destination="LAb-HM-Gha" kind="push" id="KxC-81-byn"/>
                     </connections>
                 </tableViewController>
@@ -272,7 +296,7 @@
                                 <rect key="frame" x="26" y="178" width="104" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Game Title" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SXi-QL-HRK">
@@ -305,6 +329,7 @@
                                 <rect key="frame" x="26" y="139" width="175" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Event" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IiO-NG-GCI">
@@ -315,6 +340,7 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="onEventSelect:" destination="qwU-0N-uaC" eventType="touchDown" id="LDj-5N-M3N"/>
+                                    <outlet property="delegate" destination="qwU-0N-uaC" id="qjX-Hi-RGV"/>
                                 </connections>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2fr-hQ-VXw">
@@ -343,9 +369,9 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <items>
                                             <barButtonItem width="249" style="plain" systemItem="fixedSpace" id="yfG-3P-XNr"/>
-                                            <barButtonItem title="select" id="1Zv-gG-W7q">
+                                            <barButtonItem title="select" id="9dN-lB-jZf">
                                                 <connections>
-                                                    <action selector="onSelectPickerButton:" destination="qwU-0N-uaC" id="tk5-EE-ar2"/>
+                                                    <action selector="onSelectPickerButton:" destination="qwU-0N-uaC" id="rcQ-Zs-z5Z"/>
                                                 </connections>
                                             </barButtonItem>
                                         </items>
@@ -360,17 +386,21 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onCreateGame:" destination="qwU-0N-uaC" eventType="touchDown" id="xQa-5V-P7g"/>
+                                    <action selector="onCreateGame:" destination="qwU-0N-uaC" eventType="touchUpInside" id="9Jd-sd-GgA"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="VuH-po-zlj" secondAttribute="trailing" constant="46" id="Dca-ix-Q5D"/>
                             <constraint firstItem="VuH-po-zlj" firstAttribute="top" secondItem="IiO-NG-GCI" secondAttribute="bottom" constant="8" id="Ibc-nT-TO0"/>
                             <constraint firstAttribute="trailing" secondItem="XjY-YT-keV" secondAttribute="trailing" constant="46" id="VwO-td-ymM"/>
                             <constraint firstItem="XjY-YT-keV" firstAttribute="top" secondItem="VuH-po-zlj" secondAttribute="bottom" constant="8" id="sbC-yH-gTg"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="RR6-oW-2kD" appends="YES" id="M46-58-P2g"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Create Game" id="7t1-6g-Zyo"/>
                     <toolbarItems/>
@@ -382,12 +412,17 @@
                         <outlet property="gameTitleTextField" destination="SXi-QL-HRK" id="TSG-FL-Kp1"/>
                         <outlet property="gameTypeSegment" destination="2fr-hQ-VXw" id="cs6-1f-RdJ"/>
                         <outlet property="pickerContainerView" destination="yf5-Xw-gew" id="Jj6-8o-YNT"/>
-                        <outlet property="pickerSelectButton" destination="1Zv-gG-W7q" id="g3d-rB-v2v"/>
+                        <outlet property="pickerSelectButton" destination="9dN-lB-jZf" id="BpD-23-woS"/>
                         <outlet property="privateGameSwitch" destination="XjY-YT-keV" id="F7T-4A-rp9"/>
                         <outlet property="randomSwitch" destination="VuH-po-zlj" id="yzQ-5t-fam"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fv9-ei-0ot" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="RR6-oW-2kD">
+                    <connections>
+                        <action selector="onTap:" destination="qwU-0N-uaC" id="WkA-ot-PaU"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1795" y="1280"/>
         </scene>
@@ -502,6 +537,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="7GF-DS-WCS"/>
-        <segue reference="FIX-0z-WzM"/>
+        <segue reference="KxC-81-byn"/>
     </inferredMetricsTieBreakers>
 </document>

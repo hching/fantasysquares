@@ -7,12 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Parse/Parse.h>
 
-@interface Event : NSObject
+@interface Event : PFObject<PFSubclassing>
 
-@property (strong, nonatomic) NSMutableArray *eventList;
+//@property (strong, nonatomic) NSMutableArray *eventList;
+
+@property NSString *teamOne;
+@property NSString *teamTwo;
+@property NSString *eventType;
+@property NSDate *eventTime;
+
++ (NSString *)parseClassName;
 
 //+ (NSMutableArray *) getEventList:(NSString *)array;
-+ (void) getEventList:(NSString *)array;
+//+ (void) getEventList:(NSString *)array;
 
 @end

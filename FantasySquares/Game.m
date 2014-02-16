@@ -7,8 +7,12 @@
 //
 
 #import "Game.h"
-#import <Parse/Parse.h>
+#import <Parse/PFObject+Subclass.h>
 
 @implementation Game
+
++ (NSString *)parseClassName {
+    return @"Game";
+}
 
 @end

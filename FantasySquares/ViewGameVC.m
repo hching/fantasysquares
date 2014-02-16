@@ -7,6 +7,10 @@
 //
 
 #import "ViewGameVC.h"
+#import "User.h"
+#import "Event.h"
+#import "Game.h"
+#import <Parse/Parse.h>
 
 @interface ViewGameVC ()
 

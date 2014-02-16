@@ -7,13 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Parse/Parse.h>
 
-@interface Game : NSObject
+@interface Game : PFObject<PFSubclassing>
 
-@property (strong, nonatomic) NSString *gameTitle;
-@property (strong, nonatomic) NSString *eventTitle;
-@property (strong, nonatomic) NSNumber *eventId;
-@property (strong, nonatomic) NSString *randamFlag;
-@property (strong, nonatomic) NSString *privateFlag;
+@property NSString *title;
+@property NSString *ownerId;
+@property NSString *ownerUsername;
+@property NSString *eventId;
+@property NSNumber *random;
+@property NSNumber *private;
+@property PFUser *user;
+
++ (NSString *)parseClassName;
 
 @end
